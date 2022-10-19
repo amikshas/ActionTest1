@@ -12,4 +12,9 @@ jobs:
  test_caller_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: amikshas/ActionTest1/.github/workflows/main.yml@main
+     - uses: actions/checkout@v2
+     - name: Run a one-line script
+       run: echo Hello, world! 
+      
+ nexus:     
+    uses: amikshas/ActionTest1/.github/workflows/main.yml@main
