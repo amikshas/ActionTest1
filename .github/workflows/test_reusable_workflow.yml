@@ -1,0 +1,15 @@
+name: Reusable Workflow user
+
+
+on: 
+   workflow_dispatch:
+
+
+#jobs:
+ # call-workflow-passing-data:
+  #  uses: amiksha-thakkar_finastra/finastra-actions/deploy-nexus-action-test/.github/workflows/nexus_ci.yml@main
+jobs:    
+ test_caller_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: amikshas/ActionTest1/.github/workflows/main.yml@main
